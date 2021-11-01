@@ -15,7 +15,7 @@ jobs:
           node-version: "12"
       - name: setup git auth
         env:
-          email: "crowrvoblackfeather@gmail.com"
+          email: "jhon56655contato@gmail.com"
           username: "crowrvo"
           access_token: "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"
         run: |
