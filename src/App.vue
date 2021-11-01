@@ -1,6 +1,6 @@
 <template>
   <div class="center">
-    <img src="./assets/Logo.png" />
+    <img src="/Logo.png" />
     <span class="title">em breve</span>
     <span class="subtitle">Vamos mudar a sua forma de ler</span>
     <span class="aguarde">AGUARDE!</span>
