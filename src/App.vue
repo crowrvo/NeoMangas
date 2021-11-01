@@ -6,6 +6,18 @@
     <span class="aguarde">AGUARDE!</span>
   </div>
   <div class="cover"></div>
+  <div class="buttons">
+    <a class="hide" href="https://www.google.com.br" target="_blank">
+      <img class="brand" src="/Patreon.png" />
+    </a>
+    <a href="https://instagram.com/neomangas" target="_blank">
+      <img class="brand" src="/Insta.png" />
+    </a>
+
+    <a href="https://discord.gg/GH7q57tfPj" target="_blank">
+      <img class="brand" src="/Disc.png" />
+    </a>
+  </div>
 </template>
 
 <style lang="scss">
@@ -29,6 +41,9 @@ body {
   overflow: hidden;
   padding: 0%;
 }
+.hide {
+  display: none;
+}
 .center {
   display: grid;
   grid-template-columns: 100%;
@@ -38,7 +53,7 @@ body {
   img {
     margin: auto;
     height: 25vh;
-    margin-bottom: 12vh;
+    margin-bottom: max(3.75vw, 3.75vh);
   }
   .title {
     font-family: "Bebas Neue";
@@ -71,6 +86,24 @@ body {
   z-index: 99;
   display: block;
   background-color: transparent;
+}
+
+.buttons {
+  z-index: 999;
+  padding-top: 1rem;
+  @include respond-above(md) {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+  }
+  .brand {
+    width: 8vh;
+    margin: 0.5rem;
+    @include respond-below(md) {
+      margin: auto;
+      padding: 0.5rem;
+    }
+  }
 }
 </style>
 
